@@ -1,0 +1,11 @@
+{
+  "name": "JS-Stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dentov13/JS-Stack.git",
+  "author": "dentov13 <tovstokhatko.denis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+  	"start": "node ."
+  }
+}
