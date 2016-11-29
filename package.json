@@ -6,6 +6,9 @@
   "author": "dentov13 <tovstokhatko.denis@gmail.com>",
   "license": "MIT",
   "scripts": {
-  	"start": "node ."
+    "start": "node ."
+  },
+  "dependencies": {
+    "color": "^0.11.4"
   }
 }
