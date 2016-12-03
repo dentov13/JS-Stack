@@ -1,8 +1,9 @@
-/* eslint-disable import/no-extraneous-dependencies, no-console */
+/* eslint-disable import/no-extraneous-dependencies */
 
 import gulp from 'gulp';
 import babel from 'gulp-babel';
 import eslint from 'gulp-eslint';
+import flow from 'gulp-flowtype';
 import mocha from 'gulp-mocha';
 import del from 'del';
 import webpack from 'webpack-stream';
@@ -30,6 +31,7 @@ gulp.task('lint', () =>
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError())
+    .pipe(flow({ abort: true }))
 );
 
 gulp.task('clean', () => del([
